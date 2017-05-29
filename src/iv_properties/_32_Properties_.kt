@@ -4,8 +4,12 @@ import util.TODO
 import util.doc32
 
 class PropertyExample() {
-    var counter = 0
-    var propertyWithCounter: Int? = todoTask32()
+  var counter = 0
+  var propertyWithCounter: Int? = null
+    set(int) {
+      counter++
+      field = int
+    }
 }
 
 fun todoTask32(): Nothing = TODO(
